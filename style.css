@@ -5,7 +5,7 @@ html {
   -webkit-transition: opacity 400ms;
   -moz-transition: opacity 400ms;
   transition: opacity 400ms;
-  font-family: 'open sans';
+  background: #1f212b;
 }
 
 body,
@@ -104,7 +104,6 @@ html {
 }
 
 .page1 {
-  background: #e6d9c8;
 }
 
 .page2 {
