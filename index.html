@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./style.css" />
     <style>
-      @keyframes splashGradient {
+      /* @keyframes splashGradient {
         0% {
           background-position: 0% 50%;
         }
@@ -19,6 +19,25 @@
       .section {
         background: linear-gradient(-45deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
         background-size: 300% 300%;
+        animation: splashGradient 6s infinite;
+        height: 100vh;
+      } */
+
+      @keyframes AnimationName {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      body {
+        /* background-color:#2030e5 ; */
+        background: linear-gradient(-45deg, #051937, #1f212b, #292929); /*#004d7a, #008793,*/
+        background-size: 300% 300%;
         animation: AnimationName 6s infinite;
         height: 100vh;
       }
@@ -29,7 +48,15 @@
       <section class="section page1" style="background: url('./Images/Main_Image03.png') no-repeat; background-size: cover">
         <div
           class="logo"
-          style="width: 115px; height: 115px; padding-top: 30px; margin-left: 30px; background: url('./Images/Logo.png') no-repeat; background-size: cover"
+          style="
+            position: relative;
+            top: 30px;
+            width: 115px;
+            height: 115px;
+            margin-left: 30px;
+            background: url('./Images/Logo.png') no-repeat;
+            background-size: cover;
+          "
         ></div>
         <div
           class="Main_text"
@@ -50,10 +77,7 @@
       <section class="section page3" style="background: url('./Images/Section03.png') no-repeat; background-size: cover">
         <div class="page-container"></div>
       </section>
-      <section
-        class="section page4"
-        style="overflow: hidden; background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); background-size: contain"
-      >
+      <section class="section page4" style="overflow: hidden; background-size: contain">
         <div class="Main_text" style="width: 1722px; height: 1033px; background: url('./Images/scroll01.png') no-repeat; background-size: cover"></div>
       </section>
       <section class="section page5" style="overflow: hidden; background: linear-gradient(to right top, #1b1c26, #1c1d27)">
@@ -73,7 +97,7 @@
             margin: 0 auto;
             margin-top: 249px;
             width: 1072px;
-            height: 494px;
+            height: 500px;
             background: url('./Images/section05.png') no-repeat;
             background-size: cover;
           "
