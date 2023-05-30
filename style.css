@@ -1,3 +1,6 @@
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css');
+
 body,
 html {
   margin: 0;
@@ -6,6 +9,8 @@ html {
   -moz-transition: opacity 400ms;
   transition: opacity 400ms;
   background: #1f212b;
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo',
+    'Noto Sans KR', 'Malgun Gothic', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
 }
 
 body,
@@ -122,6 +127,41 @@ h1 {
   font-size: 50px;
   font-weight: 100;
   overflow: hidden;
+}
+
+footer {
+  color: #555557;
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+footer .cont {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1060px;
+  display: block;
+}
+footer .copy {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #00aa8b;
+  max-width: 1060px;
+  color: #55555e;
+}
+footer .cont dl {
+  display: inline-block;
+  width: 100%;
+}
+footer .cont dl dt {
+  display: inline-block;
+  width: 10%;
+}
+footer .cont dl dd {
+  display: inline-block;
+  width: 85%;
 }
 
 @media (max-width: 1681px) {
